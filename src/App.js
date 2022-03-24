@@ -12,7 +12,7 @@ function App() {
       <div className="App">
         <div className="navbar">
           <h2 style={{ cursor: "pointer", userSelect: "none" }}>
-            News<span style={{ color: "#e78b40" }}>Bes</span>
+            News<span style={{ color: "#e78b40" }}> App</span>
           </h2>
         </div>
         <div className="container">

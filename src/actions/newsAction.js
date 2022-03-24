@@ -1,4 +1,5 @@
 import axios from "axios";
+import { AUTH } from "../keys";
 import {
   FETCH_EVERYTHING,
   EVERYTHING_LOADING,
@@ -13,7 +14,7 @@ export const fetchEverything = () => (dispatch) => {
       "https://newsapi.org/v2/everything?q=all&pageSize=100&sortBy=publishedAt&language=en",
       {
         headers: {
-          Authorization: `Basic ef5a2bd8bcaf45dca42dfe4c68e069ea`,
+          Authorization: `Basic ${AUTH}`,
         },
       }
     )
@@ -34,10 +35,10 @@ export const setEverythingLoading = () => {
 export const fetchHeadlines = () => (dispatch) => {
   axios
     .get(
-      "https://newsapi.org/v2/top-headlines?q=all&pageSize=100&sortBy=publishedAt",
+      "https://newsapi.org/v2/top-headlines?q=all&pageSize=100&language=en&sortBy=publishedAt",
       {
         headers: {
-          Authorization: `Basic ef5a2bd8bcaf45dca42dfe4c68e069ea`,
+          Authorization: `Basic ${AUTH}`,
         },
       }
     )

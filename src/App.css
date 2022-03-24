@@ -30,7 +30,7 @@ a {
 .container {
   padding: 0;
   margin: 0;
-  height: 93vh;
+  height: 92vh;
   display: flex;
 }
 
@@ -55,7 +55,7 @@ a {
   padding: 0 1rem;
   margin: 0 auto;
   overflow: auto;
-  height: 85vh;
+  height: 78vh;
 }
 .everything > .content > .item, .headlines > .content > .item {
   display: grid;
@@ -73,6 +73,16 @@ a {
 }
 .headlines {
   border-left: 1px solid #3b4152;
+}
+
+/* Search */
+.search {
+  width: 95%;
+  padding: 0.5rem;
+  margin: 1rem 0.5rem 0.5rem;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(68, 70, 75, 0.8);
+  color: #ffffff;
 }
 
 
